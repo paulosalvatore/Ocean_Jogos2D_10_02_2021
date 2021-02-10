@@ -46,11 +46,18 @@
 - Clique na setinha para expandir o arquivo `Idle (32x32)`
 - Dê um clique no arquivo `Idle (32x32)_0`, segure o `Shift` e clique no arquivo `Idle (32x32)_10` para selecionar todos os arquivos
 - Arraste e solte os arquivos selecionados para a `Scene`
-- Uma janela de animação deve abrir
+- Uma janela para salvar a animação deve abrir
 - Digite `Idle` e pressione `Enter`
 - Na `Hierarchy`, selecione o novo objeto `Idle (32x32)_0`
 - Vá no `Inspector` e mude o nome para `Jogador`, na caixinha que fica na parte superior com o nome do objeto
 - Clique com o botão direito no `Transform` e selecione `Reset`
 - Aperte `Shift + F` para visualizar onde o jogador está
-- Apertei `Play`
+- Aperte `Play`
 
+## Aumentando o tamanho da câmera
+
+- Saia do modo `Play`
+- Selecione a `MainCamera` na `Hierarchy`
+- Vá no `Inspector` e procure pelo componente chamado `Camera`
+- Dentro desse componente, há uma propriedade chamada `Size`, mude o valor de `5` para `1.2`
+- Aperte `Play`
