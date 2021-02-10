@@ -64,6 +64,7 @@
 - Vá no `Inspector` e procure pelo componente chamado `Camera`
 - Dentro desse componente, há uma propriedade chamada `Size`, mude o valor de `5` para `1.2`
 - Aperte `Play`
+- Certifique-se de que o slider de `Scale`, na aba `Game`, está todo para esquerda
 
 ## Criando o Fundo
 
@@ -83,3 +84,13 @@
 - Na Label, digite `Full HD`
 - Coloque `1920` em `width` e `1080` em `Height`
 - Clique em `Ok`
+
+## Movimentação do Jogador
+
+- Selecione o objeto do `Jogador`
+- Vá no `Inspector` e clique em `Add Component`
+- Digite `Jogador`, com `J` maiúsculo
+- Pressione `Enter` duas vezes
+- Isso deverá adicionar um novo componente de script ao seu objeto
+- Para abrir, dê dois cliques na caixinha com o nome `Jogador`
+- Isso deverá abrir o `Visual Studio Code` com o script do `Jogador` aberto
