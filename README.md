@@ -70,6 +70,13 @@
 - Com o **objeto do fundo selecionado**, vá no `Inspector` e procure pelo componente `Sprite Renderer`
 - Vá na opção `Order in Layer` e mude de `0` para `-1`
 - Mude a opção `Draw Mode` de `Simple` para `Tiled`, para que a imagem se ajuste conforme o tamanho
-- Mude o `Size` `Width` para `3.9` e `Height` para `2.4`
+- Mude o `Size` `Width` para `4.5` e `Height` para `2.5`
 - Clique com o botão direito em cima do componente `Transform` e selecione e opção `Reset`
 
+## Ajustando o tamanho da janela do `Game`
+
+- Na janela do `Game`, procure pela opção `Free Aspect`
+- Clique nessa opção, vá no final da janelinha que abriu e clique em `+`
+- Na Label, digite `Full HD`
+- Coloque `1920` em `width` e `1080` em `Height`
+- Clique em `Ok`
