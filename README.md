@@ -42,7 +42,7 @@
 - Aguarde
 - Depois que importar, se quiser visualizar o conteúdo do pacote, navegue até a pasta`Pixel Adventure 1`, dentro tem uma pasta chamada `Scenes` com um arquivo chamado `Demo.unity`
 
-## Construção do Projeto
+## Criação do Jogador
 
 - Abra o arquivo `SampleScene.unity` na pasta `Assets/Scenes`
 - Abra a pasta `Pixel Adventure 1/Assets/Main Characters/Ninja Frog`
@@ -134,4 +134,11 @@
   
   ```
 
-- 
+## Criação do cenário
+
+- Vá até a pasta `Assets/Pixel Adventure 1/Assets/Items/Boxes/Box 1` e arraste o arquivo `Idle` para a cena. Na `Hierarchy`, mude o nome do novo objeto criado para `Caixa`.
+- Vá até a pasta `Assets/Pixel Adventure 1/Assets/Traps/Blocks` e arraste o arquivo `Idle` para a cena. Na `Hierarchy`, mude o nome do novo objeto criado para `Pedra`.
+- Selecione o objeto da `Caixa`, vá no `Inspector` e clique em `Add Component`. Digite `Box Collider 2D` e pressione `Enter`.
+- Selecione o objeto do `Jogador`, vá no `Inspector` e clique em `Add Component`. Digite `Polygon Collider 2D` e pressione `Enter`.
+- Ainda no `Inspector` do `Jogador`, adicione um novo componente chamado `Rigidbody2D`. Nesse componente adicionado, mude o valor da opção `Gravity Scale` de `1` para `0`. Expanda a área de `Constraints` e ative a opção `Freeze Rotation` `Z`.
+- Selecione o objeto da `Caixa`, vá no `Inspector` e clique em `Add Component`. Digite `Polygon Collider 2D` e pressione `Enter`.
