@@ -38,3 +38,19 @@
 - Clique no botão `Import`
 - Aguarde
 - Depois que importar, se quiser visualizar o conteúdo do pacote, navegue até a pasta`Pixel Adventure 1`, dentro tem uma pasta chamada `Scenes` com um arquivo chamado `Demo.unity`
+
+## Construção do Projeto
+
+- Abra o arquivo `SampleScene.unity` na pasta `Assets/Scenes`
+- Abra a pasta `Pixel Adventure 1/Assets/Main Characters/Ninja Frog`
+- Clique na setinha para expandir o arquivo `Idle (32x32)`
+- Dê um clique no arquivo `Idle (32x32)_0`, segure o `Shift` e clique no arquivo `Idle (32x32)_10` para selecionar todos os arquivos
+- Arraste e solte os arquivos selecionados para a `Scene`
+- Uma janela de animação deve abrir
+- Digite `Idle` e pressione `Enter`
+- Na `Hierarchy`, selecione o novo objeto `Idle (32x32)_0`
+- Vá no `Inspector` e mude o nome para `Jogador`, na caixinha que fica na parte superior com o nome do objeto
+- Clique com o botão direito no `Transform` e selecione `Reset`
+- Aperte `Shift + F` para visualizar onde o jogador está
+- Apertei `Play`
+
