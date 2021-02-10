@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour
 {
+    public float velocidade = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +15,8 @@ public class Jogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
+        var h = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
+        var v = Input.GetAxis("Vertical") * velocidade * Time.deltaTime;
 
         transform.Translate(
             h,
