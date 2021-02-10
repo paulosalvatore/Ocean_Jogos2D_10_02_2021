@@ -1,4 +1,15 @@
-# Instalação da Unity
+# Vídeos para auxiliar
+
+- Instalar e configurar a Unity e o Visual Studio Code
+  - https://www.youtube.com/watch?v=Ny5g3YwPT5Y
+- Primeiros passos na Unity:
+  - https://www.youtube.com/watch?v=_q_bT1f36RQ
+- Criação de um projeto (no caso, Jogo do Dino):
+  - https://www.youtube.com/watch?v=t4AJQ6LwSVo
+- Criação de um Space Shooter, do começo ao fim, em 3 horas:
+  - https://www.youtube.com/watch?v=uHvqkFZK5Oo
+
+## Instalação da Unity
 
 - Instale o UnityHub
 
