@@ -8,6 +8,8 @@ public class Jogador : MonoBehaviour
 
     GameObject caixaColidindo;
 
+    GameObject caixaArrastando;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,22 @@ public class Jogador : MonoBehaviour
             v,
             0
         );
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (caixaArrastando)
+            {
+                caixaArrastando.transform.parent = null;
+
+                caixaArrastando = null;
+            }
+            else if (caixaColidindo)
+            {
+                caixaArrastando = caixaColidindo;
+
+                caixaArrastando.transform.parent = transform;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
