@@ -54,10 +54,22 @@
 - Aperte `Shift + F` para visualizar onde o jogador está
 - Aperte `Play`
 
-## Aumentando o tamanho da câmera
+## Aumentando o tamanho dos objetos (reduzindo a área da câmera)
 
-- Saia do modo `Play`
+- Saia do modo `Play` (garanta que o botão `Play` **não está azul**)
 - Selecione a `MainCamera` na `Hierarchy`
 - Vá no `Inspector` e procure pelo componente chamado `Camera`
 - Dentro desse componente, há uma propriedade chamada `Size`, mude o valor de `5` para `1.2`
 - Aperte `Play`
+
+## Criando o Fundo
+
+- Saia do modo `Play`
+- Vá até a pasta `Assets/Pixel Adventure 1/Assets/Background` e escolha um dos fundos disponíveis
+- Arraste e solte para a cena
+- Com o **objeto do fundo selecionado**, vá no `Inspector` e procure pelo componente `Sprite Renderer`
+- Vá na opção `Order in Layer` e mude de `0` para `-1`
+- Mude a opção `Draw Mode` de `Simple` para `Tiled`, para que a imagem se ajuste conforme o tamanho
+- Mude o `Size` `Width` para `3.9` e `Height` para `2.4`
+- Clique com o botão direito em cima do componente `Transform` e selecione e opção `Reset`
+
