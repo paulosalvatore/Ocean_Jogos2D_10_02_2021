@@ -6,6 +6,8 @@ public class Jogador : MonoBehaviour
 {
     public float velocidade = 1f;
 
+    GameObject caixaColidindo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,19 @@ public class Jogador : MonoBehaviour
         );
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.CompareTag("Caixa"))
+        {
+            caixaColidindo = other.gameObject;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (caixaColidindo == other.gameObject)
+        {
+            caixaColidindo = null;
+        }
     }
 }

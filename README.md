@@ -142,3 +142,72 @@
 - Selecione o objeto do `Jogador`, vá no `Inspector` e clique em `Add Component`. Digite `Polygon Collider 2D` e pressione `Enter`.
 - Ainda no `Inspector` do `Jogador`, adicione um novo componente chamado `Rigidbody2D`. Nesse componente adicionado, mude o valor da opção `Gravity Scale` de `1` para `0`. Expanda a área de `Constraints` e ative a opção `Freeze Rotation` `Z`.
 - Selecione o objeto da `Caixa`, vá no `Inspector` e clique em `Add Component`. Digite `Polygon Collider 2D` e pressione `Enter`.
+
+## Arrastando a caixa
+
+- Abra o script do `Jogador`
+
+- Logo após a chave `}` que fecha o método `Update`, mas antes da chave `}` que fecha a classe `Jogador`, crie um novo método, chamado `void OnCollisionEnter2D(Collision2D other) {}`.
+
+- O arquivo`Jogador.cs` deverá ter o seguinte conteúdo:
+
+- ```c#
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class Jogador : MonoBehaviour
+  {
+      public float velocidade = 1f;
+  
+      GameObject caixaColidindo;
+  
+      // Start is called before the first frame update
+      void Start()
+      {
+  
+      }
+  
+      // Update is called once per frame
+      void Update()
+      {
+          var h = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
+          var v = Input.GetAxis("Vertical") * velocidade * Time.deltaTime;
+  
+          transform.Translate(
+              h,
+              v,
+              0
+          );
+      }
+  
+      private void OnCollisionEnter2D(Collision2D other)
+      {
+          if (other.gameObject.CompareTag("Caixa"))
+          {
+              caixaColidindo = other.gameObject;
+          }
+      }
+  
+      private void OnCollisionExit2D(Collision2D other)
+      {
+          if (caixaColidindo == other.gameObject)
+          {
+              caixaColidindo = null;
+          }
+      }
+  }
+  
+  ```
+
+- Volte para a Unity e selecione o objeto da `Caixa`
+
+- No `Inspector`, clique na opção `Tag: Untagged` e clique em `Add Tag`
+
+- Expanda a opção `Tags` e clique no botão `+`
+
+- Digite `Caixa`, da mesma forma que escrevemos no Script, com `C` maiúsculo e pressione `Enter`
+
+- Selecione novamente o objeto da `Caixa` e clique novamente na opção `Tag: Untagged`
+
+- Selecione a opção `Caixa` que acabamos de criar

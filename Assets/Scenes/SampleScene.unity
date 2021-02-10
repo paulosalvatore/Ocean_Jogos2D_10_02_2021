@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 1788005316}
   m_Layer: 0
   m_Name: Caixa
-  m_TagString: Untagged
+  m_TagString: Caixa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
