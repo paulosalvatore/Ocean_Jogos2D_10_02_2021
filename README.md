@@ -88,9 +88,47 @@
 ## Movimentação do Jogador
 
 - Selecione o objeto do `Jogador`
+
 - Vá no `Inspector` e clique em `Add Component`
+
 - Digite `Jogador`, com `J` maiúsculo
+
 - Pressione `Enter` duas vezes
+
 - Isso deverá adicionar um novo componente de script ao seu objeto
+
 - Para abrir, dê dois cliques na caixinha com o nome `Jogador`
+
 - Isso deverá abrir o `Visual Studio Code` com o script do `Jogador` aberto
+
+- No script que foi aberto, substitua o código atual pelo seguinte código:
+
+- ```c#
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class Jogador : MonoBehaviour
+  {
+      // Start is called before the first frame update
+      void Start()
+      {
+  
+      }
+  
+      // Update is called once per frame
+      void Update()
+      {
+          var h = Input.GetAxis("Horizontal");
+          var v = Input.GetAxis("Vertical");
+  
+          transform.Translate(
+              h,
+              v,
+              0
+          );
+      }
+  }
+  ```
+
+- 
