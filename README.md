@@ -14,6 +14,7 @@
 - Instale o UnityHub
 - Instale o Visual Studio Code (https://code.visualstudio.com/download)
   - Para o VSCode funcionar, instale também o `.NET SDK 4.7.1`: https://www.microsoft.com/en-us/download/details.aspx?id=56119
+  - Dicas de configuração: https://www.youtube.com/watch?v=Ny5g3YwPT5Y
 
 ## Para instalar a Unity:
 - No UnityHub, clique na aba `Installs`
